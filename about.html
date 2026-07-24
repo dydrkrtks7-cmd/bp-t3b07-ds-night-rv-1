@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="editorial-apple">
+<meta name="bpaas-design-theme" content="kr-ledger-sepia">
+<title>마포 룸싸롱 추천 가이드 — 상세 정보와 지역 시그널 완전 해부</title>
+<meta name="description" content="마포 룸싸롱의 실질적 구조와 지역 시그널을 해부합니다. 이용자가 알아야 할 상세 정보, 업장 유형별 특성, 마포 유흥 지형의 본질적 정보를 제공합니다.">
+<meta name="keywords" content="마포 룸싸롱 정보, 마포 유흥 구조, 룸싸롱 유형, 마포 지역 시그널, 업장 정보 해부">
+<link rel="canonical" href="https://mapo-room-note.gongdeok-club.xyz/info">
+<meta property="og:title" content="마포 룸싸롱 상세 정보 — 지역 시그널과 업장 구조 완전 해부">
+<meta property="og:description" content="마포 룸싸롱의 실질적 구조와 지역 시그널을 해부합니다. 이용자가 알아야 할 상세 정보를 제공합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mapo-room-note.gongdeok-club.xyz/info">
+<style>
+:root {
+  --font-serif: 'Noto Serif KR', 'Source Serif 4', Georgia, serif;
+  --font-sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-bg: #faf6f0;
+  --color-surface: #f3ede4;
+  --color-border: #d4c9b8;
+  --color-border-light: #e8e0d4;
+  --color-text: #2c2418;
+  --color-text-muted: #6b5e4f;
+  --color-text-faint: #9a8d7e;
+  --color-accent: #8b4513;
+  --color-accent-light: #a0522d;
+  --color-highlight: #fdf2e9;
+  --color-dark: #1a140e;
+  --color-card-bg: #ffffff;
+  --color-card-shadow: rgba(44, 36, 24, 0.06);
+  --max-width: 720px;
+  --max-width-wide: 960px;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.8;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+.random-container { max-width: var(--max-width-wide); margin: 0 auto; padding: 0 var(--space-lg); }
+.random-container--narrow { max-width: var(--max-width); }
+.random-rule { border: none; border-top: 1px solid var(--color-border); margin: var(--space-2xl) 0; }
+.random-rule-double { border: none; border-top: 3px double var(--color-border); margin: var(--space-2xl) 0; }
+.random-header { position: sticky; top: 0; z-index: 100; background: rgba(250, 246, 240, 0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border-light); }
+.random-header-inner { max-width: var(--max-width-wide); margin: 0 auto; padding: var(--space-md) var(--space-lg); display: flex; align-items: center; justify-content: space-between; }
+.random-site-title { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; color: var(--color-text); letter-spacing: -0.02em; }
+.random-site-title a { text-decoration: none; color: inherit; }
+.random-nav { display: flex; gap: var(--space-lg); align-items: center; }
+.random-nav a { text-decoration: none; color: var(--color-text-muted); font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+.random-nav a:hover, .random-nav a.active { color: var(--color-accent); }
+.random-hamburger { display: none; background: none; border: none; cursor: pointer; padding: var(--space-sm); }
+.random-hamburger span { display: block; width: 20px; height: 2px; background: var(--color-text); margin: 5px 0; transition: 0.3s; }
+.random-hero { padding: var(--space-3xl) 0 var(--space-2xl); text-align: center; }
+.random-hero__eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-accent); margin-bottom: var(--space-md); }
+.random-hero__title { font-family: var(--font-serif); font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 700; line-height: 1.3; letter-spacing: -0.03em; color: var(--color-dark); margin-bottom: var(--space-lg); }
+.random-hero__subtitle { font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.7; max-width: 560px; margin: 0 auto; }
+.random-section { padding: var(--space-2xl) 0; }
+.random-section__label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent); margin-bottom: var(--space-md); display: flex; align-items: center; gap: var(--space-sm); }
+.random-section__label::before { content: ''; width: 24px; height: 1px; background: var(--color-accent); }
+.random-section__title { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; margin-bottom: var(--space-lg); }
+.random-section__lead { font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.8; margin-bottom: var(--space-xl); }
+.random-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-lg); }
+.random-card { background: var(--color-card-bg); border: 1px solid var(--color-border-light); border-radius: 8px; padding: var(--space-xl); transition: box-shadow 0.3s, border-color 0.3s; }
+.random-card:hover { box-shadow: 0 8px 24px var(--color-card-shadow); border-color: var(--color-border); }
+.random-card__number { font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-border); line-height: 1; margin-bottom: var(--space-sm); }
+.random-card__title { font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; margin-bottom: var(--space-sm); line-height: 1.4; }
+.random-card__text { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.7; }
+.random-card--wide { grid-column: 1 / -1; }
+.random-card--accent { background: var(--color-highlight); border-color: var(--color-accent); }
+.random-card--accent .random-card__number { color: var(--color-accent); }
+.random-card--dark { background: var(--color-dark); color: #e8e0d4; border-color: var(--color-dark); }
+.random-card--dark .random-card__number { color: #6b5e4f; }
+.random-card--dark .random-card__text { color: #b8a898; }
+.random-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+.random-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); }
+.random-blockquote { border-left: 3px solid var(--color-accent); padding: var(--space-lg) var(--space-xl); background: var(--color-highlight); border-radius: 0 8px 8px 0; margin: var(--space-xl) 0; }
+.random-blockquote p { font-family: var(--font-serif); font-size: 1.1rem; line-height: 1.7; font-style: italic; color: var(--color-text); }
+.random-blockquote cite { display: block; font-style: normal; font-size: 0.8rem; color: var(--color-text-muted); margin-top: var(--space-sm); }
+.random-table-wrap { overflow-x: auto; margin: var(--space-xl) 0; border: 1px solid var(--color-border-light); border-radius: 8px; }
+.random-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.random-table th { background: var(--color-surface); font-weight: 700; text-align: left; padding: var(--space-md) var(--space-lg); border-bottom: 2px solid var(--color-border); font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-muted); }
+.random-table td { padding: var(--space-md) var(--space-lg); border-bottom: 1px solid var(--color-border-light); vertical-align: top; }
+.random-table tr:last-child td { border-bottom: none; }
+.random-table tr:hover td { background: var(--color-highlight); }
+.random-list { list-style: none; padding: 0; }
+.random-list li { padding: var(--space-md) 0; border-bottom: 1px solid var(--color-border-light); display: flex; gap: var(--space-md); align-items: flex-start; }
+.random-list li:last-child { border-bottom: none; }
+.random-list__bullet { flex-shrink: 0; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; margin-top: 0.65rem; }
+.random-faq { margin: var(--space-xl) 0; }
+.random-faq__item { border-bottom: 1px solid var(--color-border-light); }
+.random-faq__question { font-weight: 700; font-size: 1rem; padding: var(--space-lg) 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.random-faq__question::after { content: '+'; font-size: 1.2rem; color: var(--color-accent); flex-shrink: 0; }
+.random-faq__answer { padding-bottom: var(--space-lg); font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.8; }
+.random-callout { display: flex; gap: var(--space-lg); background: var(--color-surface); border: 1px solid var(--color-border-light); border-radius: 8px; padding: var(--space-xl); margin: var(--space-xl) 0; align-items: flex-start; }
+.random-callout__icon { flex-shrink: 0; width: 40px; height: 40px; background: var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.1rem; }
+.random-callout__body { flex: 1; }
+.random-callout__title { font-weight: 700; font-size: 0.95rem; margin-bottom: var(--space-xs); }
+.random-callout__text { font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7; }
+.random-stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-lg); text-align: center; padding: var(--space-xl) 0; }
+.random-stat__number { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--color-accent); line-height: 1; }
+.random-stat__label { font-size: 0.75rem; color: var(--color-text-muted); margin-top: var(--space-xs); letter-spacing: 0.05em; }
+.random-footer { border-top: 1px solid var(--color-border); padding: var(--space-2xl) 0; margin-top: var(--space-3xl); }
+.random-footer__inner { max-width: var(--max-width-wide); margin: 0 auto; padding: 0 var(--space-lg); display: flex; justify-content: space-between; align-items: center; }
+.random-footer__text { font-size: 0.78rem; color: var(--color-text-faint); }
+.random-tag { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; padding: var(--space-xs) var(--space-sm); border: 1px solid var(--color-border); border-radius: 4px; color: var(--color-text-muted); margin-right: var(--space-xs); margin-bottom: var(--space-xs); }
+.random-tag--active { background: var(--color-accent); color: white; border-color: var(--color-accent); }
+.random-metro { display: flex; flex-wrap: wrap; gap: var(--space-md); margin: var(--space-xl) 0; }
+.random-metro__item { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm) var(--space-md); background: var(--color-surface); border-radius: 6px; font-size: 0.85rem; }
+.random-metro__dot { width: 10px; height: 10px; border-radius: 50%; }
+.random-metro__dot--6 { background: #c13a8a; }
+.random-metro__dot--2 { background: #2c9d3e; }
+.random-metro__dot--5 { background: #7b4bb3; }
+.random-metro__dot--9 { background: #8c6e3a; }
+.random-divide { display: grid; grid-template-columns: 1fr 1px 1fr; gap: var(--space-2xl); margin: var(--space-2xl) 0; }
+.random-divide__line { background: var(--color-border-light); }
+.random-stamp { display: inline-flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) var(--space-md); border: 2px solid var(--color-accent); border-radius: 4px; font-size: 0.75rem; font-weight: 700; color: var(--color-accent); letter-spacing: 0.1em; transform: rotate(-2deg); }
+@media (max-width: 768px) {
+  .random-nav { display: none; }
+  .random-hamburger { display: block; }
+  .random-card-grid { grid-template-columns: 1fr; }
+  .random-grid-2, .random-grid-3 { grid-template-columns: 1fr; }
+  .random-stat-row { grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
+  .random-hero__title { font-size: 1.6rem; }
+  .random-divide { grid-template-columns: 1fr; gap: var(--space-md); }
+  .random-divide__line { height: 1px; width: 100%; }
+  .random-section__title { font-size: 1.3rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="random-header">
+<div class="random-header-inner">
+<div class="random-site-title"><a href="/">마포룸노트</a></div>
+<nav class="random-nav">
+<a href="/">메인</a>
+<a href="/guide" class="active">가이드</a>
+<a href="/info">정보</a>
+<a href="/types">유형</a>
+<a href="/conditions">조건</a>
+<a href="/notes">참고</a>
+</nav>
+<button class="random-hamburger" aria-label="메뉴">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<main>
+<div class="random-container">
+
+<section class="random-hero">
+<div class="random-hero__eyebrow">Transparent Ledger — 정보 섹션</div>
+<h1 class="random-hero__title">마포 룸싸롱,<br>숨기지 않고 말한다</h1>
+<p class="random-hero__subtitle">대부분의 가이드가 말하지 않는 것들. 업장 구조, 비용의 실체, 마포 유흥 지형의 실제 흐름을 있는 그대로 해부합니다.</p>
+</section>
+
+<hr class="random-rule">
+
+<div class="random-container--narrow">
+
+<div class="random-stamp">정보 공개 원칙</div>
+
+<p style="font-size: 1.05rem; line-height: 2; margin: var(--space-xl) 0; color: var(--color-text-muted);">
+이 페이지의 모든 정보는 가공되지 않은 사실에 기반합니다. 추천이 아닙니다. 설명입니다. 이용자가 판단할 수 있는 재료를 투명하게 제공하는 것, 그것이 이 페이지의 유일한 목적입니다. 마포 룸싸롱 시장의 구조를 이해하면, 어떤 선택이든 더 명확해집니다.
+</p>
+
+</div>
+
+<hr class="random-rule">
+
+<section class="random-section">
+<div class="random-section__label">지역 시그널</div>
+<h2 class="random-section__title">마포 유흥 지형, 지도 위의 실체</h2>
+<p class="random-section__lead">마포구는 단순히 '유흥가'가 밀집한 지역이 아닙니다. 교통, 인프라, 수요의 구조적 교차점이 만들어낸 독자적인 생태계가 존재합니다.</p>
+</section>
+
+<div class="random-metro">
+<div class="random-metro__item"><div class="random-metro__dot random-metro__dot--6"></div>6호선 광흥창·상수역</div>
+<div class="random-metro__item"><div class="random-metro__dot random-metro__dot--2"></div>2호선 합정·홍대입구</div>
+<div class="random-metro__item"><div class="random-metro__dot random-metro__dot--5"></div>5호선 마포·공덕</div>
+<div class="random-metro__item"><div class="random-metro__dot random-metro__dot--9"></div>9호선 신촌·이대</div>
+</div>
+
+<div class="random-stat-row">
+<div>
+<div class="random-stat__number">4</div>
+<div class="random-stat__label">주요 접근 지하철 노선</div>
+</div>
+<div>
+<div class="random-stat__number">3</div>
+<div class="random-stat__label">핵심 상권 구간</div>
+</div>
+<div>
+<div class="random-stat__number">2</div>
+<div class="random-stat__label">시간대별 이용 패턴</div>
+</div>
+<div>
+<div class="random-stat__number">1</div>
+<div class="random-stat__label">지역적 특성 키워드</div>
+</div>
+</div>
+
+<section class="random-section">
+<h3 class="random-section__title" style="font-size: 1.2rem;">핵심 상권별 특성</h3>
+<div class="random-card-grid">
+<div class="random-card">
+<div class="random-card__number">01</div>
+<div class="random-card__title">공덕·마포 구간</div>
+<div class="random-card__text">오피스 수요와 숙박 인프라가 교차하는 지역. 비즈니스 미팅 후 이용 패턴이 강하며, 시설 규모가 상대적으로 큰 업장이 분포합니다. 공항 접근성도 이 구간의 상업적 특성을 설명합니다.</div>
+</div>
+<div class="random-card">
+<div class="random-card__number">02</div>
+<div class="random-card__title">합정·서교동 구간</div>
+<div class="random-card__text">젊은 수요층과 외국인 관광객의 유입이 겹치는 구간. 업장 스펙트럼이 넓고, 주말과 주중의 이용 패턴 차이가 가장 큽니다. 평균 단가 분포도 가장 넓은 구간입니다.</div>
+</div>
+<div class="random-card">
+<div class="random-card__number">03</div>
+<div class="random-card__title">광흥창·상수 구간</div>
+<div class="random-card__text">상대적으로 조용한 주거지역과 인접해 있어 소규모·고객 맞춤형 업장이 많습니다. 접근성이 낮아 초보자에게는 진입 장벽이 있을 수 있으나, 개인화된 경험을 원하는 이에게는 유의미한 구간입니다.</div>
+</div>
+</div>
+</section>
+
+<hr class="random-rule-double">
+
+<section class="random-section">
+<div class="random-section__label">구조 해부</div>
+<h2 class="random-section__title">룸싸롱이 실제로 작동하는 구조</h2>
+<p class="random-section__lead">가장 중요한 것을 가장 먼저 말하겠습니다. 룸싸롱의 '정보'란 결국 구조를 이해하는 것입니다. 구조를 모르면 비용도, 선택도, 경험도 모두 감에 의존하게 됩니다.</p>
+</section>
+
+<div class="random-container--narrow">
+
+<div class="random-callout">
+<div class="random-callout__icon">!</div>
+<div class="random-callout__body">
+<div class="random-callout__title">핵심 원칙</div>
+<div class="random-callout__text">룸싸롱의 가격 구조는 '시간'과 '인원' 두 축으로 움직입니다. 여기에 서비스 유형, 주류, 시간대 변수가 더해집니다. 단순히 '多少錢'을 묻는 것보다 구조를 이해하는 것이 선행되어야 합니다.</div>
+</div>
+</div>
+
+</div>
+
+<div class="random-table-wrap">
+<table class="random-table">
+<thead>
+<tr>
+<th>구분</th>
+<th>설명</th>
+<th>고려사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>시스템</strong></td>
+<td>시간제 기본 과금 + 추가 항목별 요금</td>
+<td>기본 시간(보통 1~2시간) 이후 추가 시간당 요금이 발생하며, 이 비율이 업장마다 크게 다릅니다</td>
+</tr>
+<tr>
+<td><strong>룸 차지</strong></td>
+<td>이용하는 공간에 대한 기본료</td>
+<td>룸 크기, 위치(층수, 전망), 인테리어 수준에 따라 차등 적용. 룸 차지가 높다고 반드시 서비스가 좋은 것은 아닙니다</td>
+</tr>
+<tr>
+<td><strong>주류</strong></td>
+<td>양주, 와인, 맥주 등 음료 항목</td>
+<td>가장 변동폭이 큰 항목. 브랜드·용량·방식(병/잔)에 따라 가격 차이가 2~3배까지 발생</td>
+</tr>
+<tr>
+<td><strong>TC (Tips Charge)</strong></td>
+<td>방문 인원에 대한 기본 인센티브</td>
+<td>방문 인원수 × 단가 구조. 시간대, 요일, 프로모션에 따라 조정 가능하며, 사전 협의가 가장 중요한 항목</td>
+</tr>
+<tr>
+<td><strong>增值服务</strong></td>
+<td>추가 서비스 항목</td>
+<td>업장에 따라 offering이 다르며, 반드시 사전에 확인하고 이용하는 것이 원칙입니다</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<hr class="random-rule">
+
+<section class="random-section">
+<div class="random-section__label">비용의 실체</div>
+<h2 class="random-section__title">비싼 것이 비싼 이유, 싼 것이 싼 이유</h2>
+</section>
+
+<div class="random-card-grid">
+<div class="random-card random-card--accent">
+<div class="random-card__number">A</div>
+<div class="random-card__title">비용이 높은 업장의 구조</div>
+<div class="random-card__text">시설 투자비(인테리어, 룸 규모, 접근성), 인건비(고정 인원 유지), 프리미엄 위치(임대료), 서비스 퀄리티 관리 비용이 합산된 결과입니다. 단순히 '비싸서' 비싼 것이 아니라, 구조적으로 높은 고정비를 감당해야 하는 업장입니다.</div>
+</div>
+<div class="random-card">
+<div class="random-card__number">B</div>
+<div class="random-card__title">비용이 낮은 업장의 구조</div>
+<div class="random-card__text">위치(비주요 상권), 규모(소형 룸), 인력 구조(유동적 운영), 마케팅 비용 절감이 합산된 결과입니다. 반드시 '나쁨'을 의미하지는 않지만, 자신이 기대하는 것과 실제 제공되는 것 사이의 간극을 인지할 필요가 있습니다.</div>
+</div>
+<div class="random-card random-card--dark">
+<div class="random-card__number">C</div>
+<div class="random-card__title">가성비의 함정</div>
+<div class="random-card__text">룸싸롱에서 '가성비'를 논할 때 가장 위험한 것은 단가 비교입니다. 같은 TC라도 서비스의 질, 시간 운영, 룸 컨디션, 전체 경험의 차이는 비교 불가능합니다. 가성비가 아닌 '자신에게 맞는 구조'를 찾아야 합니다.</div>
+</div>
+</div>
+
+<hr class="random-rule-double">
+
+<div class="random-container--narrow">
+
+<section class="random-section">
+<div class="random-section__label">지역 시그널 심층</div>
+<h2 class="random-section__title">마포 지역만의 독특한 시그널 5가지</h2>
+<p class="random-section__lead">다른 지역과 마포를 구분 짓는 구조적 특징입니다. 이것을 이해하면 마포 룸싸롱 시장의 흐름을 예측할 수 있습니다.</p>
+
+<ul class="random-list">
+<li>
+<div class="random-list__bullet"></div>
+<div>
+<strong>교통 허브의 영향</strong> — 공덕역은 공항철도(AREX)와 5·6·9호선이 교차하는 복합 환승역입니다. 이 교통 구조가 '비즈니스 + 유흥' 수요의 교차점을 만들며, 마포 룸싸롱 시장의 기본 토대가 됩니다.
+</div>
+</li>
+<li>
+<div class="random-list__bullet"></div>
+<div>
+<strong>숙박 인프라 밀집</strong> — 공덕·마포 일대의 호텔·모텔 밀집도는 서울 평균 대비 높습니다. 숙박과 유흥의 동선이 겹치는 것이 이 지역의 수요 구조적 특징입니다.
+</div>
+</li>
+<li>
+<div class="random-list__bullet"></div>
+<div>
+<strong>상권 간 이동성</strong> — 홍대·합정·연남·서교동이 보행 가능 거리에 밀집해 있어, '1차(식사·술) → 2차(룸)' 동선이 자연스럽게 형성됩니다. 이 이동성이 룸싸롱 수요의 2차 채널 역할을 합니다.
+</div>
+</li>
+<li>
+<div class="random-list__bullet"></div>
+<div>
+<strong>시간대별 분리</strong> — 주간에는 오피스·상업 수요, 야간에는 유흥 수요가 작동하는 이중 구조. 이 분리가 업장의 운영 전략(주간 프로모션, 야간 프리미엄 등)에도 영향을 미칩니다.
+</div>
+</li>
+<li>
+<div class="random-list__bullet"></div>
+<div>
+<strong>외국인 수요의 유입</strong> — 인천공항 접근성과 홍대·합정의 관광지 특성이 외국인 이용자를 끌어옵니다. 영어 대응이 가능한 업장이 마포에서 상대적으로 많은 이유입니다.
+</div>
+</li>
+</ul>
+</section>
+
+<hr class="random-rule">
+
+<section class="random-section">
+<div class="random-section__label">이용자 구분</div>
+<h2 class="random-section__title">어떤 이용자냐에 따라 달라지는 것</h2>
+<p class="random-section__lead">룸싸롱은 하나의 범주가 아닙니다. 이용자 유형에 따라 적합한 업장, 예상 비용, 준비 사항이 완전히 다릅니다.</p>
+</section>
+
+<div class="random-grid-2">
+<div class="random-card">
+<div class="random-card__title">1차 방문자</div>
+<div class="random-card__text">첫 경험을 앞둔 이용자가 가장 많이 하는 실수는 '이미 경험한 사람의 기준'으로 업장을 선택하는 것입니다. 초보자에게 중요한 것은 편안함, 명확한 비용 안내, 소규모 업장입니다. 무리하게 대형 업장을 고르는 것보다 익숙한 환경에서 시작하는 것이 현명합니다.</div>
+<div style="margin-top: var(--space-md);">
+<span class="random-tag">소규모 업장</span>
+<span class="random-tag">투명한 요금</span>
+<span class="random-tag">초보자 친화</span>
+</div>
+</div>
+<div class="random-card">
+<div class="random-card__title">경험자</div>
+<div class="random-card__text">이미 여러 번 경험한 이용자에게 중요한 것은 '다양성'입니다. 같은 업장을 반복 방문하는 것보다, 새로운 구간의 업장을 탐색하는 것이 경험의 폭을 넓힙니다. 마포의 경우 공덕, 합정, 광흥창 세 구간을 모두 경험해보는 것이 지역 전체의 구조를 이해하는 길입니다.</div>
+<div style="margin-top: var(--space-md);">
+<span class="random-tag--active random-tag">구간별 탐색</span>
+<span class="random-tag">다양한 시스템</span>
+<span class="random-tag">지역 비교</span>
+</div>
+</div>
+<div class="random-card">
+<div class="random-card__title">비즈니스 이용</div>
+<div class="random-card__text">접대·회식 목적이 가장 높은 비율을 차지하는 유형입니다. 이 경우 중요한 것은 '상대방의 편안함'입니다. 시설 수준, 프라이버시, 서비스 퀄리티가 핵심 기준이며, 비용은 2차적 고려 사항이 됩니다.</div>
+<div style="margin-top: var(--space-md);">
+<span class="random-tag">프라이버시</span>
+<span class="random-tag">시설 수준</span>
+<span class="random-tag">접근성</span>
+</div>
+</div>
+<div class="random-card">
+<div class="random-card__title">외국인 이용</div>
+<div class="random-card__text">语言 소통이 가장 큰 변수입니다. 영어 대응이 가능하거나 외국인 전용 서비스가 있는 업장을 선택하는 것이 필수이며, 마포 지역이 이러한 업장의 비율이 상대적으로 높습니다.</div>
+<div style="margin-top: var(--space-md);">
+<span class="random-tag">언어 대응</span>
+<span class="random-tag">문화적 배려</span>
+<span class="random-tag">마포 적합</span>
+</div>
+</div>
+</div>
+
+<hr class="random-rule">
+
+<section class="random-section">
+<div class="random-section__label">지역 시그널 비교</div>
+<h2 class="random-section__title">구간별 특성 비교표</h2>
+<p class="random-section__lead">같은 마포라도 구간에 따라 업장 특성, 접근성, 비용 구조가 다릅니다. 이 차이를 이해하는 것이 마포 룸싸롱 정보의 핵심입니다.</p>
+</section>
+
+<div class="random-table-wrap">
+<table class="random-table">
+<thead>
+<tr>
+<th>항목</th>
+<th>공덕·마포</th>
+<th>합정·서교동</th>
+<th>광흥창·상수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>교통 접근</strong></td>
+<td>최상 — 공항철도·4개 노선</td>
+<td>상 — 2호선·경의중앙선</td>
+<td>중 — 6호선 단일 접근</td>
+</tr>
+<tr>
+<td><strong>주요 수요</strong></td>
+<td>비즈니스·접대</td>
+<td>일반·관광</td>
+<td>개인·소규모</td>
+</tr>
+<tr>
+<td><strong>업장 규모</strong></td>
+<td>대형~중형 위주</td>
+<td>소형~대형 혼재</td>
+<td>소형~중형 위주</td>
+</tr>
+<tr>
+<td><strong>비용 수준</strong></td>
+<td>상~최상</td>
+<td>중~상</td>
+<td>중</td>
+</tr>
+<tr>
+<td><strong>초보 적합성</strong></td>
+<td>보통 — 규모가 크면 부담</td>
+<td>보통 — 선택지가 많아 혼란</td>
+<td>양호 — 소규모로 진입 용이</td>
+</tr>
+<tr>
+<td><strong>영업 형태</strong></td>
+<td>夜中心 운영</td>
+<td>夜中心 + 일부 주간</td>
+<td>夜中心 위주</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<hr class="random-rule-double">
+
+<div class="random-container--narrow">
+
+<section class="random-section">
+<div class="random-section__label">FAQ</div>
+<h2 class="random-section__title">가장 자주 묻는 것, 가장 솔직하게 답한다</h2>
+
+<div class="random-faq">
+<div class="random-faq__item">
+<div class="random-faq__question">마포 룸싸롱의 대략적인 비용은?</div>
+<div class="random-faq__answer">구간, 규모, 시간대에 따라 천차만별입니다. 공덕 대형 업장과 광흥창 소형 업장은 2~3배까지 차이가 날 수 있습니다. 중요한 것은 '평균'이 아니라 자신이 선택한 업장의 정확한 시스템을 확인하는 것입니다. 일반적으로 2~3인 이용 기준, 술 포함 시 최소 수십만 원 이상은 예상하는 것이 현실적입니다.</div>
+</div>
+<div class="random-faq__item">
+<div class="random-faq__question">예약이 필요한가요?</div>
+<div class="random-faq__answer">요일과 시간대에 따라 다릅니다. 금토 주말과 프리미엄 시간대(21~23시)는 예약이 필수에 가깝습니다. 평일이나 이른 시간대는 비교적 유연합니다. 다만, 처음 방문하는 업장이라면 예약과 함께 시스템(비용 구조)을 미리 확인하는 것이 가장 현명한 접근입니다.</div>
+</div>
+<div class="random-faq__item">
+<div class="random-faq__question">혼자 가도 괜찮은가요?</div>
+<div class="random-faq__answer">물론 가능합니다. 다만, 업장마다 1인 이용에 대한 태도가 다릅니다. 소규모 업장은 1인 고객을 환영하는 곳이 많고, 대형 업장은 단체·접대 수요 중심이라 1인 이용 시 선택지가 제한될 수 있습니다. 혼자 이용 시에는 소규모·1인 친화 업장을 찾는 것이 좋습니다.</div>
+</div>
+<div class="random-faq__item">
+<div class="random-faq__question">마포 지역이 다른 지역(강남, 일산 등)과 다른 점은?</div>
+<div class="random-faq__answer">가장 큰 차이는 교통 구조와 수요의 복합성입니다. 강남이 '-business only' 이미지라면, 마포는 비즈니스와 일반 유흥이 공존하는 구조입니다. 가격대도 강남 대비 다양하고, 업장 스펙트럼이 넓어 선택 폭이 크다는 것이 특징입니다.</div>
+</div>
+<div class="random-faq__item">
+<div class="random-faq__question">이용 전 반드시 확인해야 할 것은?</div>
+<div class="random-faq__answer">세 가지입니다. 첫째, 비용 구조(시스템)를 정확히 확인. 둘째, 자신이 원하는 서비스 범위를 파악. 셋째, 예약 시 인원과 시간을 정확히 전달. 이 세 가지를 미리 준비하면 불필요한 오해나 불편을 크게 줄일 수 있습니다.</div>
+</div>
+</div>
+
+</section>
+
+<hr class="random-rule">
+
+<section class="random-section">
+<div class="random-section__label">마지막 말</div>
+<h2 class="random-section__title" style="font-size: 1.4rem;">정보는 힘이다, 하지만 판단은 당신의 몫이다</h2>
+<div class="random-blockquote">
+<p>"좋은 선택은 좋은 정보에서 시작됩니다. 하지만 정보가 많다고 좋은 선택이 되는 것은 아닙니다. 자신이 원하는 것을 명확히 알고, 그 기준에 맞춰 정보를 필터링할 때 비로소 좋은 선택이 됩니다."</p>
+</div>
+<p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.9; margin-top: var(--space-xl);">
+이 페이지가 제공한 것은 '답'이 아닌 '재료'입니다. 마포 룸싸롱의 구조, 비용의 원리, 지역의 특성 — 이 정보들을 자신의 기준에 맞춰 해석하는 것, 그것이 이 페이지의 목적이었습니다.
+<br><br>
+구조를 이해하면 감에 의존하지 않습니다. 감에 의존하지 않으면 실수를 줄일 수 있습니다. 그것이 '정보 공개'의 의미입니다.
+</p>
+</section>
+
+</div>
+
+</div>
+</main>
+
+<footer class="random-footer">
+<div class="random-footer__inner">
+<div class="random-footer__text">© 마포룸노트 — 마포 룸싸롱 정보 플랫폼</div>
+<div>
+<a href="/guide" style="font-size: 0.78rem; color: var(--color-text-faint); text-decoration: none;">가이드</a>
+<span style="color: var(--color-border); margin: 0 0.5rem;">·</span>
+<a href="/info" style="font-size: 0.78rem; color: var(--color-text-faint); text-decoration: none;">정보</a>
+<span style="color: var(--color-border); margin: 0 0.5rem;">·</span>
+<a href="/types" style="font-size: 0.78rem; color: var(--color-text-faint); text-decoration: none;">유형</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
